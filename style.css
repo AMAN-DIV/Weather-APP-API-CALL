@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+   
+
+}
+body{
+    background-color: #222;
+    height: 100vh;
+    width: 100VW;
+    background-image: url('./img0.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    transition: 2s;
+    overflow: hidden;
+    
+    /* animation */
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration:30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes  animate {
+    0%{
+        background-image:url('./img1.jpg');
+    }
+    20%{
+        background-image:url('./img2.jpg');
+    }
+    40%{
+        background-image:url('./img3.jpg');
+    }
+    60%{
+        background-image:url('./img4.jpg');
+    }
+    80%{
+        background-image:url('./img5.jpg');
+    }
+    100%{
+        background-image:url('./img6.jpg');
+    }
+    
+}
+
+/* :only-child{ */
+.card{
+    width: 90%;
+    max-width: 470px;
+    
+    /* background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(0,254,186,1) 35%, rgba(91,84,138,1) 100%); */
+    background:#000000;
+    color: #fff;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    opacity: 0.80;
+    
+ 
+
+}
+
+/* .card:hover{
+    /* width: 95%;
+    max-width: 490px; */
+    /* background:background-color:#b3dfa1;
+    /* background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%); */
+    /* color: #000; */
+    /* box-shadow: 2rm;
+    transition: 1s;
+    opacity: 0.9;
+     /* */ */
+
+    
+ */
+ */
+
+.serch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.serch input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color:#555;
+    padding:10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.serch input:hover{
+  
+    /* font-size: 34px;
+    font-weight: 800; */
+    transition: 3s;
+    font-weight: 600;
+}
+
+.serch button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.serch button:hover{
+    background: red;
+    width: 70px;
+    height: 70px;
+}
+
+.serch button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+  
+
+
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20 px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-top: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
